@@ -22,12 +22,12 @@ jobs:
         dotnet-version: 8.0.x
     - name: Restore dependencies
       run: dotnet restore
-      working-directory: ./RentalCar.User/RentalCar.User.API
+      working-directory: ./RentalCar.User.API
       
     - name: Build
       run: dotnet build --no-restore
-      working-directory: ./RentalCar.User/RentalCar.User.API
+      working-directory: ./RentalCar.User.API
       
     - name: Test
       run: dotnet test --no-build --verbosity normal
-      working-directory: ./RentalCar.User/RentalCar.User.API
+      working-directory: ./RentalCar.User.API
